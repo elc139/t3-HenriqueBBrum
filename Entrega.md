@@ -4,7 +4,7 @@
 ### Matrícula: 201810077
 
 ## Código:
-	[OpenMPDemoABC.cpp](OpenMPDemoABC.cpp)
+[OpenMPDemoABC.cpp](OpenMPDemoABC.cpp)
 
 ## Results:
 
