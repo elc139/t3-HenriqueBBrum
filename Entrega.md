@@ -3,6 +3,9 @@
 ### Aluno: Henrique Becker Brum
 ### Matrícula: 201810077
 
+## Código:
+	[OpenMPDemoABC.cpp](OpenMPDemoABC.cpp)
+
 ## Results:
 
 	Test  A , SCHED = RUNTIME, chunk 0 : using mutex (expecting correct results)
@@ -57,13 +60,14 @@
 
 
 
+---
 
 
 
-Foram testados os schedules static, dynamic, guided com chunk não definido e com chunk de tamanho 15 usando mutex, Test A,  e sem mutex, Teste B além desses três tipos de schedules também foi testado o auto e o runtime.
+* Foram testados os schedules static, dynamic, guided com chunk não definido e com chunk de tamanho 15 usando mutex, Test A,  e sem mutex, Teste B além desses três tipos de schedules também foi testado o auto e o runtime.
 
-De modo geral quanto maior o chunk em relação ao tamanho total do vetor mais desparelho fica a quantidade de cada letra. Já relacionada a cada schedule, houve leve modificação do resultado entre schedule, dynamic e guided quando chunk = 0, já quando o chunk = 15,  o  guided dividiu mais porporcionalmente o tempo.
+* De modo geral quanto maior o chunk em relação ao tamanho total do vetor mais desparelho fica a quantidade de cada letra. Já relacionada a cada schedule, houve leve modificação do resultado entre schedule, dynamic e guided quando chunk = 0, já quando o chunk = 15,  o  guided dividiu mais porporcionalmente o tempo.
 
-Quanto aos modos runtime e auto, o tempo de cada thread foi divido de maneira similar as outros modos quando o tamanho de chunk foi 15. Em todos os modos de schedule quando não foi usado mutex o resultado saiu errado.
+* Quanto aos modos runtime e auto, o tempo de cada thread foi divido de maneira similar as outros modos quando o tamanho de chunk foi 15. Em todos os modos de schedule quando não foi usado mutex o resultado saiu errado.
 
-O resultado mostrado não é o completo para ver o completo abra results.txt
+* O resultado mostrado não é o completo para ver o completo abra [results.txt](results.txt)
